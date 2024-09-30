@@ -1,0 +1,3 @@
+- First do "npm i" in both frontend and backend
+- BACKEND PORT: 3000
+- FRONTEND PORT: 3001
