@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "regions": ["bom1"],
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/node",
+        "config": { "includeFiles": ["dist/**"] }
+      }
+    ],
+    "env": {
+      "NODE_OPTIONS": "--experimental-specifier-resolution=node"
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/index.js"
+      }
+    ]
+  }
